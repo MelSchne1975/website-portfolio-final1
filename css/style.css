@@ -99,7 +99,7 @@ a:active { /* Selected link */
     color: #fdf7ed; /* Override the default link color */
     font-weight: 500;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 12px;
     border-bottom: 2px solid #a1bbce; /* Width of the border, type, color */
     transition: 0.2s opacity;
 }
@@ -125,6 +125,7 @@ a:active { /* Selected link */
     text-transform: uppercase;
     border: 2px solid #143a52;
     transition: .2s background-color, font-weight;
+    border-radius: 12px;
 }
 
 .button.contact:visited,
@@ -280,6 +281,15 @@ nav > ul > li > a:active {
     display: inline-block;
     width: 100%;
     text-align: center;
+}
+
+
+.headshotimg {
+    max-width: 450px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
 }
 
 .background h4 {
