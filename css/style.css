@@ -480,7 +480,7 @@ Medium devices (640px and larger)
     nav > ul > li {
         padding: 0 16px;
     }
-    .social-icon {
+    .social-icon a {
         width: 36px;
     }
     .learnings p span {
