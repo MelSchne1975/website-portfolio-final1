@@ -64,10 +64,17 @@ img {
     max-width: 150px;
 }
 
+
 .social-icon {
-    display: inline-block;
-    width: 24px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between the icons as needed */
+}
+  .social-icon a {
+    display: inline-block;
+    width: 36px;
 }
 
 .process img {
@@ -573,6 +580,8 @@ Large devices (1024px or larger)
 
 /* CSS Animation */
 
+/* CSS Animation */
+
 @keyframes p-color-change {
     0% {fill: #ffffff;}
     10% {fill: #c0cad8;}
@@ -652,3 +661,50 @@ Large devices (1024px or larger)
 .exclamation-point {
     animation: 5s exclamation-point-transform infinite normal ease-out;
 }
+
+
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+  
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+style.css
