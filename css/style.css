@@ -400,7 +400,7 @@ nav > ul > li > a:active {
     display: inline-block;
     width: 100%;
     text-align: center;
-    padding: 8px, 0 8px;
+    padding: 8px 0 8px;
     margin: 24px 0 40px;
     font-size: 1.25em;
     font-weight: 500;
@@ -467,8 +467,16 @@ Medium devices (640px and larger)
         margin-left: auto;
         margin-right: auto;
     }
-    #project-title img {
+    #project-title .projectimagemain {
         max-width: 750px;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #project-title .projectimage {
+        max-width: 1150px;
         position: relative;
         display: block;
         margin-left: auto;
@@ -707,4 +715,3 @@ Large devices (1024px or larger)
   .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
   }
-style.css
